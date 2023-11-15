@@ -1,9 +1,8 @@
+require('dotenv').config();
 const axios = require('axios');
 const yargs = require('yargs');
 const fs = require('fs');
-
-const API_URL = 'http://api.weatherapi.com/v1/current.json';
-const CONFIG_FILE_PATH = './weather-config.json';
+const { API_URL, CONFIG_FILE_PATH, API_TOKEN } = process.env;
 
 function getWeather(city, token) {
   const params = {
@@ -53,7 +52,7 @@ const argv = yargs
 const config = getJSON();
 
 const city = argv.city || config.city || 'Нижний Новгород';
-const token = argv.token || config.token;
+const token = argv.token || config.token || API_TOKEN;
 
 getWeather(city, token)
   .then((data) => {
