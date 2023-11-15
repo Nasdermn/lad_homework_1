@@ -2,9 +2,9 @@
   "name": "1",
   "version": "1.0.0",
   "description": "",
-  "main": "weatherGetter.js",
+  "main": "weather.js",
   "scripts": {
-    "start": "nodemon weatherGetter.js"
+    "start": "nodemon weather.js"
   },
   "keywords": [],
   "author": "",
