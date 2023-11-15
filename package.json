@@ -1,0 +1,17 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weatherGetter.js",
+  "scripts": {
+    "start": "nodemon weatherGetter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "nodemon": "^3.0.1",
+    "yargs": "^17.7.2"
+  }
+}
